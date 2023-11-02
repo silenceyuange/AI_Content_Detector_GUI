@@ -139,14 +139,12 @@ if st.session_state.started:
                 width: 150px;
                 Height: 50px;
                 display: flex;
+                float: right;
                 color: white;
                 font-size: 18px;
                 border: none;
                 cursor: pointer;
-                style=display: flex;
-                justify-content: center;
-                align-items: center;
-
+                margin-right: 23cm;
             }
             div.stButton > button:first-child:hover {
                 background-color: #fff;
