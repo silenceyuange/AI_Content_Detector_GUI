@@ -200,14 +200,14 @@ if st.session_state.started:
 
 
 
-st.markdown(
-        """
-        <div style="position: absolute; bottom: -5.8cm; right: 20px;">
-            <a href='#' style="text-decoration: underline; color: #FF5733;">About</a>
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+# st.markdown(
+#         """
+#         <div style="position: absolute; bottom: -5.8cm; right: 20px;">
+#             <a href='#' style="text-decoration: underline; color: #FF5733;">About</a>
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
 
 
