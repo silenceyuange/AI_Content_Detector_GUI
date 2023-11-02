@@ -68,7 +68,7 @@ if not st.session_state.started:
 if not st.session_state.started:
     st.markdown("<h1 style='display: flex; text-align:center;justify-content: center; align-items: center; font-size: 50px ; height: 55vh;'>Welcome to AI Content Detector</h1>", unsafe_allow_html=True)
     st.markdown("")
-    columns = st.columns((20, 5, 20))
+    columns = st.columns((2, 1, 2))
 
     # Use custom CSS to style the button
 
