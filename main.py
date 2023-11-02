@@ -143,8 +143,7 @@ if st.session_state.started:
                 font-size: 18px;
                 border: none;
                 cursor: pointer;
-                style='display: flex;
-                text-align:center;
+                style=display: flex;
                 justify-content: center;
                 align-items: center;
 
