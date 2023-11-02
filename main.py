@@ -144,7 +144,7 @@ if st.session_state.started:
                 font-size: 18px;
                 border: none;
                 cursor: pointer;
-                margin-right: 23cm;
+                margin-right: 16cm;
             }
             div.stButton > button:first-child:hover {
                 background-color: #fff;
