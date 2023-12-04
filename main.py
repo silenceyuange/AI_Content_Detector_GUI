@@ -203,7 +203,7 @@ if st.session_state.started:
 
 st.markdown(
         """
-        <div style="position: absolute; bottom: -5.8cm; left: 20px;">
+        <div style="position: absolute; bottom: -5.8cm; left: 5px;">
             <a style="text-decoration: underline; color: #FF5733;">Site is not optimize for mobile view.</a>
         </div>
         """,
