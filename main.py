@@ -90,7 +90,6 @@ if not st.session_state.started:
             text-transform: none;
             user-select: none;
             -webkit-user-select: none;
-            width: max-content;
             }
             div.stButton > button:first-child:hover {
                 background-color: #ffffff;
