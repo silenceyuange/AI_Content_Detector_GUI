@@ -4,7 +4,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import ExtraTreesClassifier
 
 # Load and preprocess the data
-data = pd.read_csv('file1.csv')
+data = pd.read_csv('dataset.csv')
 vectorizer = TfidfVectorizer()
 X = vectorizer.fit_transform(data['text'])
 y = data['label']
