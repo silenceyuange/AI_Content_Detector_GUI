@@ -62,10 +62,6 @@ if 'started' not in st.session_state:
 
 # Check if the "Get Started" button is clicked
 if not st.session_state.started:
-    st.session_state.started = False
-
-# Check if the "Get Started" button is clicked
-if not st.session_state.started:
     st.markdown("<h1 style='display: flex; text-align:center;justify-content: center; align-items: center; font-size: 50px ; height: 55vh;'>Welcome to AI Content Detector</h1>", unsafe_allow_html=True)
     st.markdown("")
     columns = st.columns((2, 1, 2))
