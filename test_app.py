@@ -3,7 +3,6 @@ from unittest.mock import patch, MagicMock
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.ensemble import ExtraTreesClassifier
-import streamlit as st
 import main as app  # Replace with the actual filename of your Streamlit app
 
 class TestStreamlitApp(unittest.TestCase):
@@ -36,10 +35,10 @@ class TestStreamlitApp(unittest.TestCase):
         # Test if the model has been trained correctly
         self.assertTrue(hasattr(app.classifier, 'estimators_'))
 
+    @patch('main.st.session_state', {'started': True})
     @patch('main.st.text_area')
     @patch('main.st.button')
-    @patch('main.st.progress')
-    def test_predict_function(self, mock_progress, mock_button, mock_text_area):
+    def test_predict_function(self, mock_button, mock_text_area, mock_session_state):
         mock_text_area.return_value = 'This is an AI-generated text'
         mock_button.return_value = True
 
@@ -54,7 +53,7 @@ class TestStreamlitApp(unittest.TestCase):
     @patch('main.st.session_state', {'started': True})
     @patch('main.st.text_area')
     @patch('main.st.button')
-    def test_streamlit_ui(self, mock_button, mock_text_area):
+    def test_streamlit_ui(self, mock_button, mock_text_area, mock_session_state):
         mock_text_area.return_value = 'This is an AI-generated text'
         mock_button.return_value = True
         
